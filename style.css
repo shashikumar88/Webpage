@@ -1,0 +1,81 @@
+body{
+    background-image:url("backgrd.png");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: "Open Sans", sans-serif;
+    
+    
+}
+
+.navbar{
+    background-color: lightblue;
+    padding: 23px 30px;
+}
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 540px;
+    }
+}
+.container{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+.nav-item:first-child .nav-link {
+    color: white !important;
+    font-size: 25px;
+}
+.line{
+    font-size: 50px;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; 
+    height: auto;/* Takes full viewport height */
+    text-align: center;
+
+}
+.nav-link:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+    .line {
+        font-size: 30px;
+    }
+}
+.line {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.icon-container {
+    position: fixed;
+    bottom: 20px; /* Adjusts the distance from the bottom */
+    right: 20px; /* Adjusts the distance from the right */
+    display: flex;
+    flex-direction: column; /* Stacks icons vertically */
+    gap: 10px; /* Adds space between icons */
+   
+}
+.icon-container img{
+    width: 40px; /* Adjust size of the icons */
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Adds smooth hover effect */
+}
